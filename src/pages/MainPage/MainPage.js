@@ -10,7 +10,7 @@ import {
   Board
 } from 'components'
 
-const MainPage = ({theme}) => (
+const MainPage = ({ theme }) => (
   <div style={{backgroundColor: theme.backgroundColor}}>
     <Flex>
       <Box>

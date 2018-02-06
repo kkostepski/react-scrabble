@@ -15,7 +15,7 @@ const squareTarget = {
 
   drop(props) {
     return true
-  },
+  }
 };
 
 const collect = (connect, monitor) => {
@@ -38,13 +38,14 @@ const Board = ({className}) => (
   </div>
 )
 
-export default DropTarget(itemTypes.BOARD, squareTarget, collect)(styled(Board)`
-  .row {
-    display: flex;
-    
-    .cell {
-      width: 60px;
-      height: 60px;
+export default DropTarget(itemTypes.BOARD, squareTarget, collect)(
+  styled(Board)`
+    .row {
+      display: flex;
+      
+      .cell {
+        width: 60px;
+        height: 60px;
+      }
     }
-  }
 `)
